@@ -13,8 +13,8 @@
     "preview": "vite preview",
     "prepare": "npm run build",
     "coverage": "vitest run --coverage",
-    "format": "prettier ./src --write",
-    "lint-only": "eslint ./src --fix",
+    "format": "prettier ./src  ./__tests__ --write",
+    "lint-only": "eslint ./src ./__tests__ --fix",
     "lint": "npm run lint-only && npm run format",
     "test": "vitest run",
     "test:watch": "vitest"
