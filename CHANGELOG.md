@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.1] - 2023-07-22
+
 ## Added
 
 - Rebroadcaster
@@ -14,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Broadcast accepts an array of Observers
+- EntityType is now a Generic
 
 ## [0.0.0] - 2023-07-21
 
@@ -21,5 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Observer library
 
-[unreleased]: https://github.com/taylorhmorris/observer/compare/v0.0.0...HEAD
+[unreleased]: https://github.com/taylorhmorris/observer/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/taylorhmorris/observer/compare/v0.0.0...v0.0.1
 [0.0.0]: https://github.com/taylorhmorris/observer/releases/tag/v0.0.0
