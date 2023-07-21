@@ -25,4 +25,16 @@ describe('Broadcaster', () => {
     broadcaster.notify(broadcaster, 'destroy');
     expect(spy).not.toHaveBeenCalled();
   });
+
+  test('can subscribe and notify multiple observers', () => {
+    const broadcaster = new Broadcaster();
+    const observer = new Observer();
+    const observer2 = new Observer();
+    const spy = vi.spyOn(observer, 'onNotify');
+    const spy2 = vi.spyOn(observer2, 'onNotify');
+    broadcaster.subscribe([observer, observer2]);
+    broadcaster.notify(broadcaster, 'destroy');
+    expect(spy).toHaveBeenCalledOnce();
+    expect(spy2).toHaveBeenCalledOnce();
+  });
 });

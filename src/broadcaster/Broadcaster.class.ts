@@ -14,10 +14,14 @@ export class Broadcaster<EventsType extends string> {
 
   /**
    * Subscribe an {@link IObserver} to notifications
-   * @param observer the {@link IObserver} to subscribe
+   * @param observers the {@link IObserver}(s) to subscribe
    */
-  subscribe(observer: IObserver<EventsType>) {
-    this.#listeners.add(observer);
+  subscribe(observers: IObserver<EventsType> | IObserver<EventsType>[]) {
+    if (observers instanceof Array) {
+      for (const observer of observers) {
+        this.#listeners.add(observer);
+      }
+    } else this.#listeners.add(observers);
   }
 
   /**
