@@ -6,11 +6,11 @@ import { Broadcaster } from "./Broadcaster.class";
  * A {@link Broadcaster} which also works as an {@link IObserver}
  * and automatically relays notifications it receives.
  */
-export class Rebroadcaster<EventsType extends string>
-  extends Broadcaster<EventsType>
-  implements IObserver<EventsType>
+export class Rebroadcaster<EntityType, EventsType extends string>
+  extends Broadcaster<EntityType, EventsType>
+  implements IObserver<EntityType, EventsType>
 {
-  onNotify(entity: object, event: EventsType | BroadcastEvents) {
+  onNotify(entity: EntityType, event: EventsType | BroadcastEvents) {
     this.notify(entity, event);
   }
 }

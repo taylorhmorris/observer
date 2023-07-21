@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Broadcast accepts an array of Observers
+- EntityType is now a Generic
 
 ## [0.0.0] - 2023-07-21
 
