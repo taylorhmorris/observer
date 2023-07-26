@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2023-07-26
+
 ## Changed
 
 - Broadcast.subscribe accepts multiple Observers using rest parameters
@@ -29,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Observer library
 
-[unreleased]: https://github.com/taylorhmorris/observer/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/taylorhmorris/observer/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/taylorhmorris/observer/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/taylorhmorris/observer/compare/v0.0.0...v0.0.1
 [0.0.0]: https://github.com/taylorhmorris/observer/releases/tag/v0.0.0
