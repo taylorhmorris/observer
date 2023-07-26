@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Changed
+
+- Broadcast.subscribe accepts multiple Observers using rest parameters
+- Broadcast.unsubscribe accepts multiple Observers using rest parameters
+
 ## [0.0.1] - 2023-07-22
 
 ## Added

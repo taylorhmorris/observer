@@ -13,27 +13,23 @@ export class Broadcaster<EntityType, EventsType extends string> {
   }
 
   /**
-   * Subscribe an {@link IObserver} to notifications
-   * @param observers the {@link IObserver}(s) to subscribe
+   * Subscribe one or more {@link IObserver}s to notifications
+   * @param {...} observers the {@link IObserver}(s) to subscribe
    */
-  subscribe(
-    observers:
-      | IObserver<EntityType, EventsType>
-      | IObserver<EntityType, EventsType>[],
-  ) {
-    if (observers instanceof Array) {
-      for (const observer of observers) {
-        this.#listeners.add(observer);
-      }
-    } else this.#listeners.add(observers);
+  subscribe(...observers: IObserver<EntityType, EventsType>[]) {
+    for (const observer of observers) {
+      this.#listeners.add(observer);
+    }
   }
 
   /**
-   * Unsubscribe an {@link IObserver} from notifications
-   * @param observer the {@link IObserver} to unsubscribe
+   * Unsubscribe one or more {@link IObserver}s from notifications
+   * @param {...} observers the {@link IObserver}(s) to unsubscribe
    */
-  unsubscribe(observer: IObserver<EntityType, EventsType>) {
-    this.#listeners.delete(observer);
+  unsubscribe(...observers: IObserver<EntityType, EventsType>[]) {
+    for (const observer of observers) {
+      this.#listeners.delete(observer);
+    }
   }
 
   /**
