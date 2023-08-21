@@ -3,6 +3,20 @@ import { BroadcastEvents } from "./BroadcastEvents.type";
 
 /**
  * Broadcaster to notify an {@link IObserver} of events.
+ *
+ * Broadcasters can subscribe one or more {@link Observer | Observers}
+ * and notify all subscribed observers.
+ * ```ts
+ * const broadcaster = new Broadcaster();
+ * broadcaster.subscribe(observer1, observer2);
+ * broadcaster.notify('entity1', 'created');
+ * ```
+ *
+ * Here strings are used as both the EntityType and EventsType to simplify
+ * the example, but complex types are supported.
+ *
+ * @typeParam EntityType - the type of entities that will trigger events sent by this Broadcaster.
+ * @typeParam EventsType - the type of events that will be sent by this Broadcaster.
  */
 export class Broadcaster<EntityType, EventsType extends string> {
   /** A set of {@link IObserver}s listening for events */
