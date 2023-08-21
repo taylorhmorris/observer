@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Example in README
+- Example in Documentation for Broadcaster and Observer
+
 ### Fixed
 
 - Incorrect heading levels in CHANGELOG v0.0.1 and v0.0.2

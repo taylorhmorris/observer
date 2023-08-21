@@ -11,10 +11,10 @@ import { BroadcastEvents } from "./BroadcastEvents.type";
  * broadcaster.subscribe(observer1, observer2);
  * broadcaster.notify('entity1', 'created');
  * ```
- * 
+ *
  * Here strings are used as both the EntityType and EventsType to simplify
  * the example, but complex types are supported.
- * 
+ *
  * @typeParam EntityType - the type of entities that will trigger events sent by this Broadcaster.
  * @typeParam EventsType - the type of events that will be sent by this Broadcaster.
  */
