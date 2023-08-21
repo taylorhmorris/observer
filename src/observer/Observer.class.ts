@@ -2,7 +2,7 @@ import { BroadcastEvents } from "../broadcaster/BroadcastEvents.type";
 import { IObserver } from "./IObserver.interface";
 
 /**
- * A simple observer which can be used to subscribe to one of more Broadcasters.
+ * A simple observer which can be used to subscribe to one or more Broadcasters.
  */
 export class Observer<EntityType, EventsType extends string>
   implements IObserver<EntityType, EventsType>

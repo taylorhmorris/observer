@@ -7,16 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Incorrect heading levels in CHANGELOG v0.0.1 and v0.0.2
+- Typo in Observer documentation
+
 ## [0.0.2] - 2023-07-26
 
-## Changed
+### Changed
 
 - Broadcast.subscribe accepts multiple Observers using rest parameters
 - Broadcast.unsubscribe accepts multiple Observers using rest parameters
 
 ## [0.0.1] - 2023-07-22
 
-## Added
+### Added
 
 - Rebroadcaster
 
