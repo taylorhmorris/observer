@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-- Update vite to 4.5.1 to address vulnerabilities
+- Update vite to 5.2.9 to address vulnerabilities
 
 ## [0.0.3] - 2023-10-18
 
