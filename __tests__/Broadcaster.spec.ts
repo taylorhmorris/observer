@@ -50,4 +50,24 @@ describe("Broadcaster", () => {
     expect(spy).not.toHaveBeenCalled();
     expect(spy2).not.toHaveBeenCalled();
   });
+
+  test("can destroy itself", () => {
+    const broadcaster = new Broadcaster();
+    const observer = new Observer();
+    const spy = vi.spyOn(observer, "onNotify");
+    broadcaster.subscribe(observer);
+    broadcaster.destroy();
+    expect(spy).toHaveBeenCalledWith(broadcaster, "destroyed");
+  });
+
+  test("destroying itself removes all listeners", () => {
+    const broadcaster = new Broadcaster();
+    const observer = new Observer();
+    const spy = vi.spyOn(observer, "onNotify");
+    broadcaster.subscribe(observer);
+    broadcaster.destroy();
+    expect(spy).toHaveBeenCalledWith(broadcaster, "destroyed");
+    broadcaster.notify(broadcaster, "new message");
+    expect(spy).toHaveBeenCalledTimes(1);
+  });
 });
