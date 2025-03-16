@@ -16,7 +16,7 @@ export default defineConfig({
   plugins: [dts()],
   test: {
     coverage: {
-      exclude: [...configDefaults.exclude, "./docs", "vite-env.d.ts"],
+      exclude: [...configDefaults.exclude, "./docs", "./src/vite-env.d.ts"],
     },
   },
 });
