@@ -1,7 +1,7 @@
 {
   "name": "@taylorhmorris/observer",
-  "private": true,
   "version": "0.0.4",
+  "description": "A simple, lightweight, and efficient observer pattern implementation for JavaScript and TypeScript.",
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
@@ -19,6 +19,12 @@
     "test": "vitest run",
     "test:watch": "vitest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taylorhmorris/observer.git"
+  },
+  "author": "Taylor H. Morris",
+  "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.22.0",
     "@vitest/coverage-v8": "^3.0.8",
