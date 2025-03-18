@@ -2,6 +2,7 @@
   "name": "@taylorhmorris/observer",
   "version": "0.0.4",
   "description": "A simple, lightweight, and efficient observer pattern implementation for JavaScript and TypeScript.",
+  "homepage": "https://taylorhmorris.github.io/observer/",
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
