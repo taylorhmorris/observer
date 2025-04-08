@@ -1,6 +1,6 @@
 {
   "name": "@taylorhmorris/observer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple, lightweight, and efficient observer pattern implementation for JavaScript and TypeScript.",
   "homepage": "https://taylorhmorris.github.io/observer/",
   "type": "module",
@@ -12,13 +12,16 @@
     "build": "vite build",
     "build:docs": "typedoc src/index.ts",
     "preview": "vite preview",
-    "prepare": "husky",
     "coverage": "vitest run --coverage",
     "format": "prettier ./src  ./__tests__ --write",
     "lint-only": "eslint ./src ./__tests__ --fix",
     "lint": "npm run lint-only && npm run format",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
