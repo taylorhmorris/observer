@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.5] - 2025-04-08
+
+### Security
+
+- Update vite to 6.2.5 to address vulnerabilities
+
+
 ## [0.0.4] - 2025-03-15
 
 ### Security
@@ -54,7 +61,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Observer library
 
-[unreleased]: https://github.com/taylorhmorris/observer/compare/v0.0.4...HEAD
+[unreleased]: https://github.com/taylorhmorris/observer/compare/v0.0.5...HEAD
+[0.0.5]: https://github.com/taylorhmorris/observer/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/taylorhmorris/observer/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/taylorhmorris/observer/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/taylorhmorris/observer/compare/v0.0.1...v0.0.2
