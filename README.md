@@ -1,4 +1,8 @@
 # observer
+![tests](https://github.com/taylorhmorris/observer/actions/workflows/npm-test.yml/badge.svg)
+[![docs](https://github.com/taylorhmorris/observer/actions/workflows/pages.yml/badge.svg?event=push)](https://taylorhmorris.github.io/observer/)
+[![npm-ver](https://img.shields.io/npm/v/%40taylorhmorris/observer)](https://www.npmjs.com/package/@taylorhmorris/observer)
+
 `observer` is a TypeScript package implementing a simple version of the Observer design pattern.
 
 ## Installation
